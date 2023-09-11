@@ -1,3 +1,7 @@
+//Koal Casler
+//GameDev 1
+//NSCC Truro 2023
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
