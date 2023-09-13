@@ -9,6 +9,7 @@ TagManager:
   - Secret
   - Pickup
   - LastDoor
+  - Teleport
   layers:
   - Default
   - TransparentFX
