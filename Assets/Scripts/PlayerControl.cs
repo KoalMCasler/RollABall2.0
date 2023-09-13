@@ -52,7 +52,7 @@ public class PlayerControl : MonoBehaviour
         {
             movementX = Input.GetAxis("Horizontal");
         }
-        //If no input or taking damage, horizontalInput = 0
+        //If no input, horizontalInput = 0
         else
         {
             movementX = 0;
@@ -61,16 +61,18 @@ public class PlayerControl : MonoBehaviour
         {
             movementZ = Input.GetAxis("Vertical");
         }
-        //If no input or taking damage, horizontalInput = 0
+        //If no input, horizontalInput = 0
         else
         {
             movementZ = 0;
         }
         SetCountText();
     }
-    void EndGame()
+    public void EndGame()
     {
-        Application.Quit();
+        //Debug line to test quit function in editor
+        UnityEditor.EditorApplication.isPlaying = false;
+        //Application.Quit();
     }
     void Movement()
     {
@@ -118,7 +120,7 @@ public class PlayerControl : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Door"))
         {
-            if (KCount == DCount)
+            if (KCount >= DCount)
             {
                 other.gameObject.SetActive(false);
                 DCount = DCount+1;

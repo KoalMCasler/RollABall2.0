@@ -19,9 +19,16 @@ public class LevelMove : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            Transition.SetBool("Leave", true);
-            SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
-            Transition.SetBool("Leave", false);
+            if(sceneBuildIndex >= 3)
+            {
+                other.GetComponent<PlayerControl>().EndGame();
+            }
+            else
+            {
+                Transition.SetBool("Leave", true);
+                SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
+                Transition.SetBool("Leave", false);
+            }
         }
     }
     
