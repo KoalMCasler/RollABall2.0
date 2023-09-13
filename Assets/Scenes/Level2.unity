@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37882e2d2fdac8e489524841bf9132f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transition: {fileID: 0}
+  transition: {fileID: 2034432944}
   TransitionTime: 0.5
 --- !u!4 &88931067 stripped
 Transform:
@@ -2666,7 +2666,7 @@ PrefabInstance:
     - target: {fileID: 3032917599423653614, guid: a9af1a9d52e61484e9c5db5d89dff298, type: 3}
       propertyPath: Transition
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2034432944}
     - target: {fileID: 3032917599423653614, guid: a9af1a9d52e61484e9c5db5d89dff298, type: 3}
       propertyPath: sceneBuildIndex
       value: 2
@@ -2928,6 +2928,11 @@ PrefabInstance:
 --- !u!224 &2034432943 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8261203599031084574, guid: c74b9d904a59bcc45b3fcfaeed902ed7, type: 3}
+  m_PrefabInstance: {fileID: 2034432942}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2034432944 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8261203599031084575, guid: c74b9d904a59bcc45b3fcfaeed902ed7, type: 3}
   m_PrefabInstance: {fileID: 2034432942}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2043748045
