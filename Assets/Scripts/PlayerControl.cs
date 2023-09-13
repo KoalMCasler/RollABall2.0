@@ -71,8 +71,8 @@ public class PlayerControl : MonoBehaviour
     public void EndGame()
     {
         //Debug line to test quit function in editor
-        UnityEditor.EditorApplication.isPlaying = false;
-        //Application.Quit();
+        //UnityEditor.EditorApplication.isPlaying = false;
+        Application.Quit();
     }
     void Movement()
     {
