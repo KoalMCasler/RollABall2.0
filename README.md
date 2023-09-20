@@ -6,3 +6,5 @@
  has a quit funtion on win as well as hitting escape. 
 
  https://www.youtube.com/watch?v=kbx2Uj3MJoA
+
+Copyright 2023, Shrouded Fortress Entertainment
